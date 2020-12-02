@@ -4,37 +4,37 @@ import { Link } from "react-router-dom";
 function Post() {
   return (
     <>
-      <div class="card mb-2 mt-2">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
+      <div className="card mb-2 mt-2">
+        <div className="card-content">
+          <div className="media">
+            <div className="media-left">
+              <figure className="image is-48x48">
                 <img
                   src="https://bulma.io/images/placeholders/96x96.png"
                   alt="Placeholder image"
                 />
               </figure>
             </div>
-            <div class="media-content">
-              <p class="title is-4">
+            <div className="media-content">
+              <p className="title is-4">
                 <Link
                   to="post/adckamsdk"
-                  className="has-text-black"
+                  classNameName="has-text-black"
                   params={{ post: "felipeisa" }}
                 >
                   Felipe Sia
                 </Link>
               </p>
-              <p class="subtitle is-6">
-                <Link className="has-text-black">@felipelindao</Link>
+              <p className="subtitle is-6">
+                <Link classNameName="has-text-black">@felipelindao</Link>
               </p>
             </div>
           </div>
 
-          <div class="content">
+          <div className="content">
             <Link
               to="post/adkamcsk"
-              className="has-text-black"
+              classNameName="has-text-black"
               params={{ post: "felipeisa" }}
             >
               Sou rico e bonito o que voces querem mais ? sim faço minha propria

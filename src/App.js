@@ -10,7 +10,7 @@ function App() {
   return (
     <div style={{ paddingTop: 40 }}>
       <Header />
-      <div className="container is-fullheight" style={{ marginTop: 40 }}>
+      <div classNameName="container is-fullheight" style={{ marginTop: 40 }}>
         <Router>
           <Switch>
             <Route exact path="/">

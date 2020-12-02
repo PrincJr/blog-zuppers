@@ -1,33 +1,17 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Post from "../../components/Post";
+import api from '../../service/api'
 
 function Home() {
-  const posts = [
-    {
-      titulo: "Mais um post",
-      descricao: "esta descricao é importante para o post",
-    },
-    {
-      titulo: "Mais um post",
-      descricao: "esta descricao é importante para o post",
-    },
-    {
-      titulo: "Mais um post",
-      descricao: "esta descricao é importante para o post",
-    },
-    {
-      titulo: "Mais um post",
-      descricao: "esta descricao é importante para o post",
-    },
-    {
-      titulo: "Mais um post",
-      descricao: "esta descricao é importante para o post",
-    },
-    {
-      titulo: "Mais um post",
-      descricao: "esta descricao é importante para o post",
-    },
-  ];
+  
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    async function fetch() {
+        await  api.get('posts').then(posts => setPosts(posts))
+    }
+    fetch()
+  },[])
 
   return (
     <>
