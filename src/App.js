@@ -4,13 +4,14 @@ import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Footer from "./components/Footer";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div style={{ paddingTop: 40 }}>
       <Header />
-      <div classNameName="container is-fullheight" style={{ marginTop: 40 }}>
+      <div style={{ marginTop: 40 }}></div>
+      <div classNameName="container is-widescreen ">
         <Router>
           <Switch>
             <Route exact path="/">

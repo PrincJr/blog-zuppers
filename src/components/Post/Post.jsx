@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Post() {
+function Post({ post }) {
   return (
     <>
-      <div className="card mb-2 mt-2">
+      <div className="card mb-2 mt-4">
         <div className="card-content">
           <div className="media">
             <div className="media-left">
               <figure className="image is-48x48">
                 <img
-                  src="https://bulma.io/images/placeholders/96x96.png"
+                  style={{ borderRadius: "50%", width: 48, height: 48}}
+                  src="https://source.unsplash.com/random"
                   alt="Placeholder image"
                 />
               </figure>
@@ -19,14 +20,14 @@ function Post() {
               <p className="title is-4">
                 <Link
                   to="post/adckamsdk"
-                  classNameName="has-text-black"
+                  className="has-text-black"
                   params={{ post: "felipeisa" }}
                 >
-                  Felipe Sia
+                  {post.name}
                 </Link>
               </p>
               <p className="subtitle is-6">
-                <Link classNameName="has-text-black">@felipelindao</Link>
+                <Link className="has-text-black">{post.nickname}</Link>
               </p>
             </div>
           </div>
@@ -34,14 +35,11 @@ function Post() {
           <div className="content">
             <Link
               to="post/adkamcsk"
-              classNameName="has-text-black"
+              className="has-text-black"
               params={{ post: "felipeisa" }}
             >
-              Sou rico e bonito o que voces querem mais ? sim faço minha propria
-              cerveja e treino até mesmo ensinei ao mundo oque é ufc.{" "}
-              <a>@bulmaio</a>.<a href="#">#css</a> <a href="#">#responsive</a>
+              {post.description}
               <br />
-              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
             </Link>
           </div>
         </div>

@@ -7,10 +7,10 @@ function Header() {
     <>
       <nav className="navbar is-black  is-fixed-top">
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
+          <a className="navbar-item" href="https://zup.com.br">
             <img
               src={Logo}
-              alt="Bulma: a modern CSS framework based on Flexbox"
+              alt="Logo Zup Tecnologia"
             />
           </a>
           <div
@@ -31,11 +31,7 @@ function Header() {
                 <p className="control">
                   <a
                     className="bd-tw-button button"
-                    data-social-network="Twitter"
-                    data-social-action="tweet"
-                    data-social-target="https://bulma.io"
-                    target="_blank"
-                    href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms"
+                    href="https://github.com/bendevjunior/blog-zuppers"
                   >
                     <span className="icon">
                       <i className="fab fa-twitter"></i>

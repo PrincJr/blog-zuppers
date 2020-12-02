@@ -8,17 +8,19 @@ function Home() {
 
   useEffect(() => {
     async function fetch() {
-        await  api.get('posts').then(posts => setPosts(posts))
+        await  api.get('blogs').then(post => {
+          setPosts(post.data)
+        })
     }
     fetch()
   },[])
 
   return (
-    <>
+    <div className="container">
       {posts.map((post) => (
-        <Post />
+        <Post post={post}/>
       ))}
-    </>
+    </div>
   );
 }
 
