@@ -30,11 +30,11 @@ function Home() {
   ];
 
   return (
-    <div className="container mt-40">
+    <>
       {posts.map((post) => (
         <Post />
       ))}
-    </div>
+    </>
   );
 }
 
